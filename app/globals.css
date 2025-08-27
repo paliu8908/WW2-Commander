@@ -1,42 +1,39 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "tailwindcss";
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   html {
-    color-scheme: dark;
+    font-family: "Bebas Neue", system-ui, serif;
+  }
+  :root {
+    /*-- Desert -- */
+    --txt-bright: white;
+    --desert-yellow: #f4f1e8;
+    --darker-desert: #dbdbc8;
+    --desert-orange: #daa520;
+    --brown: #8b4513;
+    --dark-brown: #2c1810;
+    --light-brown: #6b5b4f;
+    --khaki: #F0E68C;
+    --sand: #daa41f;
+    --beach: #ccccb6;
+
+    /* -- UK -- */
+    --uk-blue: #012169;
+    --uk-red: #c8102e;
+    --uk-white: #FFFFFF;
+
+    /* -- Germany -- */
+    --ger-grey: #262521;
+    --ger-yellow: #6b5e3e;
+
+    /*-- USA -- */
+    --usa-blue: #3C3B6E;
+    --usa-red: #B22234;
+    --usa-white: #FFFFFF;
+
+    /* -- Italy -- */
+    --ita-white: #F4F5F0;
+    --ita-green: #008C45;
+    --ita-red: 	#CD212A;
   }
 }

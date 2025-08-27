@@ -1,16 +1,16 @@
 'use client'
 
 import Image from "next/image";
-import Header from "./Common/Header";
-import Hero from "./components/Hero";
-import Footer from "./Common/Footer";
+import Header from "../Common/Header";
+import Settings from "./components/settings";
+import Footer from "../Common/Footer";
 
 export default function Home() {
 
   return (
     <>
       <Header />
-      <Hero />
+      <Settings />
       <Footer />
     </>
   );
