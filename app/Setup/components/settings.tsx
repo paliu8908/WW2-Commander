@@ -44,7 +44,7 @@ export default function Settings() {
 
     function flag(nation: string) {
         if(nation === "UK") {
-            return "/UK.png"
+            return "/uk.png"
         } else if(nation === "Germany") {
             return "/Germany.svg"
         } else if(nation === "USA") {
