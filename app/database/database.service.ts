@@ -7,6 +7,7 @@ const options = {}
 let client: MongoClient;
 let clientPromise: Promise<MongoClient>;
 
+//
 if (!uri) throw new Error("MONGODB_URI must be defined");
 
 if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "production") {
