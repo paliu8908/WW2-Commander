@@ -9,7 +9,7 @@ let clientPromise: Promise<MongoClient>;
 
 if (!uri) throw new Error("MONGODB_URI must be defined");
 
-if (process.env.NODE_ENV === "development") {
+if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "production") {
     if(!(global as any)._mongoClientPromise) {
         client = new MongoClient(uri, options);
         (global as any)._mongoClientPromise = client.connect();
