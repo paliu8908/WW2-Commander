@@ -18,7 +18,7 @@ export default function Header() {
                     <Image src="/UK.png" alt="UK Flag" fill className="object-contain"/>
                 </a>
                 <a href="/Italy" className="relative w-[15%] h-[50%]">   
-                    <Image src="/Italy.png" alt="Italy Flag" fill className="object-contain"/>
+                    <Image src="/italy.png" alt="Italy Flag" fill className="object-contain"/>
                 </a>
 
             </div>
